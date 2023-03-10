@@ -1,0 +1,62 @@
+.panel {
+  z-index: 1;
+  // otherwise panel will stretch across entire grid column
+  width: max-content;
+  .menu-handle { display: block; }
+  .menu { width: 200px; }
+  // by default panel is not pinned, hide the 'hide' label
+  .hide-label { display: none; }
+
+  // when pinned
+  &.is-pinned {
+    // otherwise it will stretch the grid
+    width: auto;
+    z-index: initial;
+    .menu-handle { display: none; }
+    .menu {
+      display: block;
+      position: initial;
+      // take up entire grid column so that menus have consistent widths
+      width: calc(100% - 14px);
+      // remove any flush margins
+      margin: unset;
+    }
+    // adjust padding on heading to match tabs
+    // .panel-heading { margin-bottom: 4px; }
+    .panel-heading li { padding: 0 0 5px 0; }
+    // hide the 'pin' label, show the 'hide' label
+    .pin-label { display: none; }
+    .hide-label { display: block; }
+    ul li { padding: 4px 0; }
+    ul li.notice { max-width: none; padding: 6px 12px; margin: 0; }
+
+    // collapsible sections
+    .menu .collapsible {
+      .list-heading { cursor: pointer; }
+      .list-heading::before {
+        content: url('/img/down.svg');
+        opacity: 0.75;
+        margin-right: 4px;
+        display: inline-block;
+      }
+      &.is-collapsed {
+        .list-heading { margin-bottom: 0; }
+        .list-heading::before { transform: rotate(-90deg); }
+        li:first-child { display: block; }
+        li { display: none; }
+      }
+    }
+
+    // below 1119 some panels automatically collapse
+    &.auto-collapse {
+      @media (max-width: 1119px) {
+        width: max-content;
+        height: max-content;
+        .menu-handle { display: block; }
+        .menu { display: none; position: absolute; width: max-content; }
+        .menu.show { display: block; }
+        .menu > ul { padding: 8px 14px; }
+      }
+    }
+  }
+}

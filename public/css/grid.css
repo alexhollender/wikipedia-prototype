@@ -1,0 +1,99 @@
+.grid-columns {
+  grid-template-columns: repeat(24, 1fr);
+  column-gap: 24px;
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr min-content;
+  row-gap: 20px;
+  max-width: 1650px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0 60px 50px 60px;
+}
+#grid .panel.is-pinned .sticky {
+  position: sticky;
+  top: 30px;
+  overflow: auto;
+  max-height: 90vh;
+}
+#grid.logged-in .panel.is-pinned .sticky {
+  top: 60px;
+}
+#grid .if-logged-in {
+  display: none;
+}
+#grid.logged-in .if-logged-in {
+  display: block;
+}
+#grid.logged-in .if-logged-in.flex {
+  display: flex;
+}
+#grid.logged-in .if-logged-out {
+  display: none;
+}
+#grid .show-below-720 {
+  display: none;
+}
+@media (max-width: 720px) {
+  #grid .show-below-720 {
+    display: block;
+  }
+  #grid .hide-below-720 {
+    display: none;
+  }
+}
+@media (max-width: 1119px) {
+  #grid .if-above-1119 {
+    display: none;
+  }
+  #grid .if-above-1119.if-logged-in {
+    display: none;
+  }
+}
+#grid.pin-toc {
+  grid-template-areas: "header header header header header header header header header header header header header header header header header header header header header header header header" "toc toc toc toc toc content content content content content content content content content content content content content content content content content . ." "toc toc toc toc toc content content content content content content content content content content content content content content content content content . ." "footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+#grid.pin-toc.pin-page-tools {
+  grid-template-areas: "header header header header header header header header header header header header header header header header header header header header header header header header" "toc toc toc toc toc content content content content content content content content content content content content content content content tools tools tools tools" "toc toc toc toc toc content content content content content content content content content content content content content content content tools tools tools tools" "footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+#grid.pin-toc.pin-main-menu {
+  grid-template-areas: "header header header header header header header header header header header header header header header header header header header header header header header header" "menu menu menu menu menu content content content content content content content content content content content content content content content tools tools tools tools" "toc toc toc toc toc content content content content content content content content content content content content content content content tools tools tools tools" "footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+#grid.pin-toc.pin-page-tools.pin-main-menu {
+  grid-template-areas: "header header header header header header header header header header header header header header header header header header header header header header header header" "menu menu menu menu menu content content content content content content content content content content content content content content content tools tools tools tools" "toc toc toc toc toc content content content content content content content content content content content content content content content tools tools tools tools" "footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+#grid.pin-page-tools.pin-main-menu {
+  grid-template-areas: "header header header header header header header header header header header header header header header header header header header header header header header header" "menu menu menu menu menu content content content content content content content content content content content content content content content tools tools tools tools" "menu menu menu menu menu content content content content content content content content content content content content content content content tools tools tools tools" "footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+#grid:not(.pin-toc) {
+  grid-template-areas: "header header header header header header header header header header header header header header header header header header header header header header header header" ". . . . content content content content content content content content content content content content content content content . . . . ." ". . . . content content content content content content content content content content content content content content content . . . . ." "footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+#grid.pin-main-menu {
+  grid-template-areas: "header header header header header header header header header header header header header header header header header header header header header header header header" "menu menu menu menu menu content content content content content content content content content content content content content content content . . . ." "menu menu menu menu menu content content content content content content content content content content content content content content content . . . ." "footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+#grid.pin-page-tools {
+  grid-template-areas: "header header header header header header header header header header header header header header header header header header header header header header header header" ". . content content content content content content content content content content content content content content content tools tools tools tools . . ." ". . content content content content content content content content content content content content content content content tools tools tools tools . . ." "footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+@media (max-width: 1119px) {
+  .grid-columns {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  #grid {
+    display: grid;
+    grid-template-rows: min-content min-content 1fr min-content;
+    row-gap: 20px;
+    grid-template-areas: "header header header header header header header header" "content content content content content content content content" "content content content content content content content content" "footer footer footer footer footer footer footer footer" !important;
+    padding: 0 40px;
+  }
+  #grid.pin-page-tools {
+    grid-template-areas: "header header header header header header header header" "content content content content content content tools tools" "content content content content content content tools tools" "footer footer footer footer footer footer footer footer" !important;
+  }
+}
+#footer {
+  margin: 50px 0;
+}
+
+/*# sourceMappingURL=grid.css.map */

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia (prototype)</title>
+  <link rel="shortcut icon" href="/img/wikipedia.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/panel.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/sticky-header.css">
+  <link rel="stylesheet" href="css/site-header.css">
+  <link rel="stylesheet" href="css/personal-tools.css">
+  <link rel="stylesheet" href="css/main-menu.css">
+  <link rel="stylesheet" href="css/toc.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/page-header.css">
+  <link rel="stylesheet" href="css/page-toolbar.css">
+  <link rel="stylesheet" href="css/page-tools.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/options.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/vector.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+
+<body>
+
+  <!-- Grid -->
+  <div id="grid" class="grid-columns pin-toc logged-in">
+
+    <!-- Sticky header -->
+    <header id="sticky-header">
+      <div class="container flex space-between">
+        <!-- Sticky header left -->
+        <div class="flex">
+          <div id="sticky-search">
+            <button class="icon flush-left"><img src="img/search.svg" /></button>
+          </div>
+          <div id="page-title-sticky"></div>
+        </div>
+        <!-- Sticky header right -->
+        <div class="flex">
+          <button id="talk-sticky" class="icon" onclick="switchToTalk()"><img src="img/talk.svg" /></button>
+          <button id="article-sticky" class="icon" onclick="switchToArticle()"><img src="img/article.svg" /></button>
+          <button class="icon"><img src="img/history.svg" /></button>
+          <button class="icon"><img src="img/edit.svg" /></button>
+          <button class="icon"><img src="img/edit-source.svg" /></button>
+          <div id="language-menu-sticky"></div>
+          <div id="personal-tools-sticky"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Site header -->
+    <header id="site-header" class="grid-columns">
+
+      <!-- Site header left -->
+      <div id="site-header-left">
+        <div id="logo" class="flex">
+          <img id="icon" class="hide-below-720" src="img/globe.png" />
+          <div class="flex column">
+            <span data-string="wordmarkImg"><img id="wordmark" src="img/logos/wordmark-en.svg" /></span>
+            <span data-string="taglineImg"><img src="img/logos/tagline-en.svg" /></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Site header right -->
+      <div id="site-header-right" class="flex">
+        <div class="left">
+          <div id="search">
+            <img class="icon" src="img/search.svg" />
+            <input placeholder="Search Wikipedia" />
+            <button class="box" onclick="searchButtonClick()">Search</button>
+            <nav class="menu">
+              <ul id="page-results"></ul>
+              <ul id="additional-search-options"></ul>
+            </nav>
+          </div>
+        </div>
+
+        <div id="personal-tools" class="flex">
+          <a class="if-logged-out spaced" data-string="pt-createaccount">Create account</a>
+          <a class="if-logged-out spaced" onclick="handleLogInOut()" data-string="pt-login">Log in</a>
+          <div class="if-logged-in flex">
+            <a class="spaced hide-below-720" data-string="username">Username_1993</a>
+            <button class="icon"><img src="img/bell.svg" /></button>
+            <button class="icon"><img src="img/inbox.svg" /></button>
+            <button class="icon"><img src="img/watchlist.svg" /></button>
+          </div>
+          <div id="personal-tools-menu">
+            <button class="icon menu-handle if-logged-out flush-right">
+              <img src="img/more.svg" />
+            </button>
+            <button class="icon dropdown menu-handle if-logged-in flush-right">
+              <img src="img/user.svg" />
+            </button>
+            <nav class="menu align-right flush-right">
+              <ul class="if-logged-in">
+                <li class="if-in-sticky-header show-below-720"><a>
+                  <img src="img/user.svg" />
+                  <span data-string="username">Username_1993</span>
+                </a></li>
+                <li><a>
+                  <img src="img/usertalk.svg" />
+                  <span data-string="talk">Talk</span>
+                </a></li>
+                <li><a>
+                  <img src="img/sandbox.svg" />
+                  <span data-string="sandboxlink-portlet-label">Sandbox</span>
+                </a></li>
+                <li><a>
+                  <img src="img/preferences.svg" />
+                  <span data-string="mypreferences">Preferences</span>
+                </a></li>
+                <li><a>
+                  <img src="img/beta.svg" />
+                  <span data-string="betafeatures-toplink">Beta</span>
+                </a></li>
+                <li><a>
+                  <img src="img/contribs.svg" />
+                  <span data-string="mycontris">Contributions</span>
+                </a></li>
+                <li><a>
+                  <img src="img/languages.svg" />
+                  <span data-string="cx-campaign-contributionsmenu-mytranslations">Translations</span>
+                </a></li>
+                <li><a>
+                  <img src="img/uploads.svg" />
+                  <span data-string="cx-campaign-contributionsmenu-myuploads">Uploaded media</span>
+                </a></li>
+              </ul>
+              <ul class="if-logged-out">
+                <li class="notice" data-string="vector-anon-user-menu-pages">Pages for logged-out editors (<a>learn more</a>)</li>
+                <li><a data-string="talk">Talk</a></li>
+                <li><a data-string="mycontris">Contributions</a></li>
+              </ul>
+              <ul class="button-row if-logged-in">
+                <button id="log-in-out-button" class="box" onclick="handleLogInOut()">
+                  <span data-string="pt-userlogout">Log out</span>
+                </button>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- Main menu -->
+    <div id="main-menu" class="panel auto-collapse" data-panel="main-menu">
+      <button class="icon menu-handle flush-left"><img src="img/menu.svg" /></button>
+      <nav class="menu flush-left">
+        <ul class="panel-heading if-logged-in if-above-1119">
+          <li class="list-heading">
+            <span data-string="vector-main-menu-label">Main menu</span>
+            <button class="pin-hide-panel-button small">
+              <span class="pin-label" data-string="vector-pin-element-label">pin</span>
+              <span class="hide-label" data-string="vector-unpin-element-label">hide</span>
+            </button>
+          </li>
+        </ul>
+        <ul>
+          <li><a data-string="mainpage-description">Main page</a></li>
+          <li><a>Contents</a></li>
+          <li><a data-string="currentevents">Current events</a></li>
+          <li><a data-string="randompage">Random article</a></li>
+          <li><a data-string="aboutsite">About Wikipedia</a></li>
+          <li><a data-string="">Donate to Wikipedia</a></li>
+          <li><a data-string="sitesupport">Contact page</a></li>
+        </ul>
+        <ul>
+          <li><a><b>Switch to old look</b></a></li>
+        </ul>
+        <ul>
+          <li class="list-heading">Contribute</li>
+          <li><a data-string="help">Help</a></li>
+          <li><a data-string="portal">Community portal</a></li>
+          <li><a data-string="recentchanges">Recent changes</a></li>
+          <li><a data-string="specialpages">Special pages</a></li>
+          <li><a data-string="upload">Upload file</a></li>
+        </ul>
+        <ul>
+          <li class="list-heading" data-string="vector-languages">Languages</li>
+          <li class="notice box" data-string="vector-language-redirect-to-top">Language links have been moved to the top of the page, across from the page title.</li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ToC -->
+    <div id="toc" class="panel auto-collapse is-pinned has-sticky-child" data-panel="toc">
+      <div class="sticky">
+        <button class="icon flush-left menu-handle"><img src="img/toc.svg" /></button>
+        <nav class="menu flush-left">
+          <ul class="panel-heading if-above-1119">
+            <li class="list-heading">
+              <span data-string="toc">Contents</span>
+              <button class="pin-hide-panel-button small">
+                <span class="pin-label" data-string="vector-pin-element-label">pin</span>
+                <span class="hide-label" data-string="vector-unpin-element-label">hide</span>
+              </button>
+            </li>
+          </ul>
+          <ul id="contents-list" class="toc-level-1">
+            <li id="toc-item-0"><a href="#" class="active" data-string="introduction">(Top)</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <main id="content">
+      <header id="page-header" class="flex space-between">
+        <h1 id="page-title"></h1>
+        <div id="language-menu">
+          <button class="quiet has-icon progressive dropdown menu-handle">
+            <img src="img/languages-blue.svg" />
+            <span>98&nbsp;</span>
+            <span data-string="vector-languages">languages</span>
+          </button>
+          <nav class="menu align-right flush-right">
+            <ul>
+              <li class="list-heading">Suggested languages</li>
+              <li class="flex align-top multi-column">
+                <ul>
+                  <li><a>中文</a></li>
+                  <li><a>日本語</a></li>
+                  <li><a>한국어</a></li>
+                  <li><a>Буряад</a></li>
+                </ul>
+                <ul>
+                  <li><a>Русский</a></li>
+                  <li><a>Deutsch</a></li>
+                  <li><a>Diné bizaad</a></li>
+                  <li><a>Español</a></li>
+                </ul>
+                <ul>
+                  <li><a>Français</a></li>
+                  <li><a>Italiano</a></li>
+                  <li><a>Tiếng Việt</a></li>
+                  <li><a>ייִדיש</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="list-heading">Worldwide</li>
+              <li class="flex align-top multi-column">
+                <ul>
+                  <li><a>Español</a></li>
+                  <li><a>Esperanto</a></li>
+                  <li><a>Français</a></li>
+                  <li><a>Ido</a></li>
+                </ul>
+                <ul>
+                  <li><a>La .lojban.</a></li>
+                  <li><a>Novial</a></li>
+                  <li><a>Português</a></li>
+                  <li><a>Simple English</a></li>
+                  <li><a>Volapük</a></li>
+                </ul>
+                <ul>
+                  <li><a>Interlingua</a></li>
+                  <li><a>Interlingue</a></li>
+                  <li><a>Kotava</a></li>
+                  <li><a>Lingua Franca Nova</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section id="page-toolbar" class="flex space-between">
+        <div class="flex tabs">
+          <a id="article-tab" class="tab active" onclick="switchToArticle()" data-string="nstab-main">Article</a>
+          <a id="talk-tab" class="tab" onclick="switchToTalk()" data-string="talk">Talk</a>
+        </div>
+        <div id="actions" class="flex hide-below-720">
+          <div class="flex tabs">
+            <a class="tab active" data-string="skin-view-view">Read</a>
+            <a class="tab if-logged-in" data-string="visualeditor-ca-editsource">Edit source</a>
+            <a class="tab" data-string="edit">Edit</a>
+            <a class="tab" data-string="skin-view-history">View history</a>
+          </div>
+          <button class="icon flush-right"><img src="img/watch.svg" /></button>
+        </div>
+      </section>
+      <section id="page-content">
+        <p id="from-wikipedia-tagline" data-string="tagline">From Wikipedia, the free encyclopedia</p>
+      </section>
+    </main>
+
+    <!-- Page tools -->
+    <div id="page-tools" class="panel has-sticky-child" data-panel="page-tools">
+      <div class="sticky">
+        <button class="quiet dropdown menu-handle flush-right" data-string="toolbox">Tools</button>
+        <nav class="menu align-right flush-right">
+          <ul class="panel-heading if-logged-in">
+            <li class="list-heading">
+              <span data-string="toolbox">Tools</span>
+              <button class="pin-hide-panel-button small">
+                <span class="pin-label" data-string="vector-pin-element-label">pin</span>
+                <span class="hide-label" data-string="vector-unpin-element-label">hide</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="collapsible">
+            <li class="list-heading" data-string="vector-page-tools-actions-label">Actions</li>
+            <li class="show-below-720"><a data-string="edit">Edit</a></li>
+            <li class="show-below-720"><a data-string="visualeditor-ca-editsource">Edit source</a></li>
+            <li class="show-below-720"><a data-string="skin-view-history">View history</a></li>
+            <li class="show-below-720"><a data-string="watch">Watch</a></li>
+            <li><a data-string="move">Move</a></li>
+            <li><a data-string="delete">Delete</a></li>
+          </ul>
+          <ul class="collapsible">
+            <li class="list-heading" data-string="vector-page-tools-general-label">General</li>
+            <li><a data-string="whatlinkshere">What links here</a></li>
+            <li><a data-string="recentchangeslinked-toolbox">Related changes</a></li>
+            <li><a data-string="permalink">Permanent link</a></li>
+            <li><a data-string="pageinfo-toolboxlink">Page information</a></li>
+            <li><a data-string="citethispage-link">Cite this page</a></li>
+            <li><a data-string="wikibase-dataitem">Wikidata item</a></li>
+            <li><a>Page size</a></li>
+            <li><a data-string="wikibase-editlinkstitle">Edit interlanguage links</a></li>
+          </ul>
+          <ul class="collapsible">
+            <li class="list-heading" data-string="coll-print_export">Print/export</li>
+            <li><a>Download as PDF</a></li>
+            <li><a data-string="printableversion">Printable version</a></li>
+          </ul>
+          <ul class="collapsible">
+            <li class="list-heading" data-string="wikibase-otherprojects">In other projects</li>
+            <li><a>Wikimedia Commons</a></li>
+            <li><a>Wikinews</a></li>
+            <li><a>Wikiquote</a></li>
+            <li><a>Wikivoyage</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" role="contentinfo">
+      <ul id="footer-info" class="">
+        <li id="footer-info-lastmod"> This page was last edited on 2 April 2020, at 21:36<span class="anonymous-show">&nbsp;(UTC)</span>.</li>
+        <li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+      </ul>
+      <ul id="footer-places" class="">
+        <li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+        <li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+        <li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+        <li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+        <li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+        <li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+        <li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+        <li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Hathor&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+         <li class="rt-enableItem"><a href="javascript:">Enable Reference Tooltips</a></li>
+         <li style="display: none;"><a href="#">Enable previews</a></li>
+      </ul>
+      <ul id="footer-icons" class="noprint">
+        <li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/img/mediawiki.png" width="88" height="31" alt="Wikimedia Foundation"></a></li>
+        <li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/img/wikimedia.png" alt="Powered by MediaWiki" width="88" height="31"></a></li>
+      </ul>
+      <div style="clear: both;"></div>
+    </div>
+
+    <!-- Options panel -->
+    <!-- <div id="options">
+      <a id="open-options" onclick="toggleOptionsPannel()" data-string="optionsOpen">options</a>
+      <a id="close-options" onclick="toggleOptionsPannel()" data-string="optionsClose">collapse</a>
+      
+      <form id="options-form">
+        <input type="radio" name="heading-style" id="current" value="current" checked>
+        <label for="current">Current</label><br>
+        
+        <input type="radio" name="heading-style" id="purple" value="purple">
+        <label for="purple">Purple</label><br>
+        
+        <div class="sub-options menu-borders-options">
+          <input type="checkbox" id="underline" name="underline">
+          <label for="underline">Underline</label>
+        </div>
+  
+        <input type="radio" name="heading-style" id="green" value="green">
+        <label for="green">Green</label><br>
+
+        <div class="sub-options bg-color-options">
+          <label for="heading-bg">Title background:</label>
+          <select name="heading-bg-color" id="heading-bg-color">
+            <option value="none">None</option>
+            <option value="yellow">Yellow</option>
+            <option value="pink">Pink</option>
+          </select><br>
+        </div>
+
+        <hr>
+        <label for="font-size">Heading size (<span id="font-size-display">26px</span>)</label>
+        <input type="range" id="font-size" data-element="page-title" name="font-size" min="12" max="52" value="26">
+        <br>
+      </form>
+    </div> -->
+
+    <!-- Modal -->
+    <!-- <div id="modal-bg">
+      <div id="modal">
+        <header>
+          <h4 data-string="optionsTitle">Modal title</h4>
+          <img id="close-modal" src="/img/x.svg" onclick="closeModal()">
+        </header>
+        <main data-string="modal">Description of what is being shown in the prototype and what kinds of feedback we are interested in. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</main>
+      </div>
+    </div> -->
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  <script src="/js/search.js"></script>
+  <script src="/js/menu.js"></script>
+  <script src="/js/panel.js"></script>
+  <script src="/js/languages.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/logInOut.js"></script>
+  <script src="/js/pageHeaderObserver.js"></script>
+  <script src="/js/sectionObserver.js"></script>
+  <script src="/js/articleOrTalk.js"></script>
+  <script src="/js/translatedStrings.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/options.js"></script>
+  <script src="/js/app.js"></script>
+
+</body>
+</html>

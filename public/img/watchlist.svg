@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>watchlist</title>
+    <g id="watchlist" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" fill="#202122" fill-rule="nonzero" points="19 4.079 15.85 4.079 14.5 1 13.15 4.079 10 4.079 12.457 6.67 11.719 9.986 14.5 8.233 17.281 10 16.548 6.684"></polygon>
+        <rect id="Rectangle" fill="#202122" fill-rule="nonzero" x="1" y="9" width="9" height="2"></rect>
+        <rect id="Rectangle" fill="#202122" fill-rule="nonzero" x="1" y="15" width="16" height="2"></rect>
+        <rect id="Rectangle" fill="#202122" fill-rule="nonzero" x="1" y="3" width="6" height="2"></rect>
+    </g>
+</svg>

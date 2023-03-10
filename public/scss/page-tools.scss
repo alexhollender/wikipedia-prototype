@@ -1,0 +1,15 @@
+#page-tools {
+  grid-area: content;
+  justify-self: end;
+  transform: translateY(41px);
+}
+
+// States
+#grid.pin-page-tools {
+  #page-tools {
+    grid-area: tools;
+    justify-self: auto;
+    margin: 51px 0 0 34px;
+    transform: none;
+  }
+}

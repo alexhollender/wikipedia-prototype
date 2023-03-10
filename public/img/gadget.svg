@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+	<title>
+		gadget
+	</title>
+	<defs>
+		<path id="path-1" d="M10,0 L12.93,2.93 L17.07,2.93 L17.07,7.07 L20,10 L17.07,12.93 L17.07,17.07 L12.93,17.07 L10,20 L7.07,17.07 L2.93,17.07 L2.93,12.93 L0,10 L2.93,7.07 L2.93,2.93 L7.07,2.93 L10,0 Z M10,4 C6.686292,4 4,6.68629 4,10 C4,13.313709 6.686292,16 10,16 C13.31371,16 16,13.313709 16,10 C16,6.68629 13.31371,4 10,4 Z M10,5.5 C12.48528,5.5 14.5,7.51472 14.5,10 C14.5,12.485281 12.48528,14.5 10,14.5 C7.514719,14.5 5.5,12.485281 5.5,10 C5.5,7.51472 7.514719,5.5 10,5.5 Z"/>
+	</defs>
+	<g id="Pieces" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+		<g id="Group" transform="translate(.584 .732)">
+			<mask id="mask-2" fill="#fff">
+				<use xlink:href="#path-1"/>
+			</mask>
+			<use id="Mask" fill="#000" xlink:href="#path-1"/>
+			<g id="🎨-Color/Base10-#202122" fill="#202122" mask="url(#mask-2)">
+				<rect id="Color" width="20" height="20" x="0" y="0"/>
+			</g>
+		</g>
+	</g>
+</svg>

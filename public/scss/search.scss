@@ -1,0 +1,85 @@
+#search {
+  max-width: 500px;
+  display: flex;
+  border: 1px solid #A2A9B1;
+  border-radius: 2px;
+  position: relative;
+  &:focus-within { .icon, button { opacity: 1; } }
+  &:hover { button { opacity: 1} }
+  &.has-results {
+    margin-left: -24px; max-width: 524px;
+    .icon { left: 22px; }
+    input { padding-left: 60px; }
+  }
+}
+
+#search .icon {
+  position: absolute;
+  padding: 1px;
+  top: 5px;
+  left: 8px;
+  opacity: 0.6;
+}
+
+#search input {
+  all: unset;
+  flex-grow: 1;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0 0 1px transparent;
+  // so it overlaps its containing div
+  margin: -1px 0 -1px -1px;
+  padding-left: 36px;
+  // so the border is above the button's border
+  z-index: 1;
+  &:hover { border: 1px solid #72777d; }
+  &:focus { border: 1px solid #36c; box-shadow: inset 0 0 0 1px #36c; }
+}
+
+#search button {
+  margin: 0;
+  border: none;
+  outline: 1px solid #a2a9b1;
+  border-radius: 0 1px 1px 0;
+  opacity: 0;
+  transition: opacity 150ms;
+}
+
+// results menu
+#search nav {
+  top: 31px;
+  left: -1px;
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+  width: calc(100% - 60px);
+
+  ul { padding: 0; }
+  li { padding: 8px 12px; line-height: 1.375; }
+  li:hover, li.selected { background-color: #eaecf0; cursor: pointer; }
+  .thumbnail {
+    width: 38px;
+    height: 38px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #c8ccd1;
+    border-radius: 2px;
+    margin: 0 7px 0 0;
+  }
+  .title-description { max-width: calc(100% - 50px); }
+  .title { color: initial; }
+  .title:hover { text-decoration: none; }
+  .description {
+    color: #54595d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #additional-search-options img { padding: 8px 11px; opacity: 0.65; }
+}
+
+// below 725px
+@media (max-width: 1000px) {
+  div.search-container .searchResults {
+    width: calc(100% + 20px);
+  }
+}

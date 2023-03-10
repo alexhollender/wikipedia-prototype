@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bell</title>
+    <g id="bell" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15.25,7.3 C15.06884,5.100013 13.4637313,3.304675 11.3475,2.935 C11.4,2.314 11.33875,1 10,1 C8.66125,1 8.6,2.314 8.6525,2.935 C6.53626875,3.304675 4.93115825,5.100013 4.75,7.3 L4.75,12.7 L3,14.5 L3,15.4 L17,15.4 L17,14.5 L15.25,12.7 L15.25,7.3 Z M10,19 C11.4497437,19 12.625,17.7911695 12.625,16.3 L7.375,16.3 C7.375,17.7911695 8.55025275,19 10,19 Z" id="Fill-1-Copy" fill="#202122" fill-rule="nonzero"></path>
+    </g>
+</svg>

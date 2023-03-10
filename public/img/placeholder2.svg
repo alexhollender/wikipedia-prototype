@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="30" viewBox="0 0 36 30">
+	<title>
+		placeholder2
+	</title>
+	<g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+		<g id="placeholder2" fill-rule="nonzero">
+			<rect id="Rectangle" width="36" height="30" x="0" y="0" fill="#EAECF0"/>
+			<path id="Shape" fill="#54595D" d="M18,15.9166667 C23.18,15.9166667 25,18.5729167 25,20.34375 L25,23 L11,23 L11,20.34375 C11,18.5729167 12.82,15.9166667 18,15.9166667 Z M18,14.5 C15.6804041,14.5 13.8,12.5972102 13.8,10.25 C13.8,7.90278981 15.6804041,6 18,6 C20.3195959,6 22.2,7.90278981 22.2,10.25 C22.2,12.5972102 20.3195959,14.5 18,14.5 Z"/>
+		</g>
+	</g>
+</svg>

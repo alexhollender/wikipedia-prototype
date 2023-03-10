@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1941" viewBox="0 0 1 1941">
+	<title>
+		sidebar2-1 copy 2
+	</title>
+	<defs>
+		<linearGradient id="linearGradient-1" x1="50%" x2="50%" y1="0%" y2="99.947%">
+			<stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+			<stop offset="2.522%" stop-color="#EAECF0"/>
+			<stop offset="93.349%" stop-color="#EAECF0"/>
+			<stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+		</linearGradient>
+	</defs>
+	<g id="sidebar2-1-copy-2" fill="none" fill-rule="evenodd" stroke="none" stroke-linecap="square" stroke-width="1">
+		<line id="Line-2" x1=".5" x2=".5" y1=".5" y2="1940.5" stroke="url(#linearGradient-1)"/>
+	</g>
+</svg>

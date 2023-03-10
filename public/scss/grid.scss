@@ -1,0 +1,156 @@
+.grid-columns {
+  grid-template-columns: repeat(24, 1fr);
+  column-gap: 24px;
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr min-content;
+  row-gap: 20px;
+  max-width: 1650px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0 60px 50px 60px;
+
+  // sticky panels
+  .panel.is-pinned .sticky {
+    position: sticky;
+    top: 30px;
+    overflow: auto;
+    max-height: 90vh;
+  }
+  &.logged-in {
+    .panel.is-pinned .sticky { top: 60px; }
+  }
+
+  // logged in & logged out elements
+  .if-logged-in { display: none; }
+  &.logged-in {
+    .if-logged-in { display: block; }
+    .if-logged-in.flex { display: flex; }
+    .if-logged-out { display: none; }
+  }
+
+  // resolution dependent elements
+  .show-below-720 { display: none; }
+  @media (max-width: 720px) {
+    .show-below-720 { display: block; }
+    .hide-below-720 { display: none; }
+  }
+
+  @media (max-width: 1119px) {
+    .if-above-1119 { display: none; }
+    .if-above-1119.if-logged-in { display: none; }
+  }
+
+  // Interface states
+
+  // Case 1 (pin: toc, hide: page tools & main menu)
+  // default for logged-out (above 1000px)
+  &.pin-toc {
+    grid-template-areas:
+      'header header header header header header header header header header header header header header header header header header header header header header header header'
+      'toc toc toc toc toc content content content content content content content content content content content content content content content content content . .'
+      'toc toc toc toc toc content content content content content content content content content content content content content content content content content . .'
+      'footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+
+  // Case 2 (pin: toc & page tools, hide: main menu)
+  // default for logged-in (above 1000px)
+  &.pin-toc.pin-page-tools {
+    // Add tools to grid template
+    grid-template-areas:
+      'header header header header header header header header header header header header header header header header header header header header header header header header'
+      'toc toc toc toc toc content content content content content content content content content content content content content content content tools tools tools tools'
+      'toc toc toc toc toc content content content content content content content content content content content content content content content tools tools tools tools'
+      'footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+
+  // Case 3 (pin: toc & main menu, hide: page tools)
+  &.pin-toc.pin-main-menu {
+    // Add menu area to grid template
+    grid-template-areas:
+      'header header header header header header header header header header header header header header header header header header header header header header header header'
+      'menu menu menu menu menu content content content content content content content content content content content content content content content tools tools tools tools'
+      'toc toc toc toc toc content content content content content content content content content content content content content content content tools tools tools tools'
+      'footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+
+  // Case 4 (pin: toc, page tools, main menu)
+  &.pin-toc.pin-page-tools.pin-main-menu {
+    grid-template-areas:
+      'header header header header header header header header header header header header header header header header header header header header header header header header'
+      'menu menu menu menu menu content content content content content content content content content content content content content content content tools tools tools tools'
+      'toc toc toc toc toc content content content content content content content content content content content content content content content tools tools tools tools'
+      'footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+
+  // Case 5 (pin: page tools, main menu, hide: toc)
+  &.pin-page-tools.pin-main-menu {
+    grid-template-areas:
+    'header header header header header header header header header header header header header header header header header header header header header header header header'
+    'menu menu menu menu menu content content content content content content content content content content content content content content content tools tools tools tools'
+    'menu menu menu menu menu content content content content content content content content content content content content content content content tools tools tools tools'
+    'footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+
+  // Case 7 (hide: toc, page tools, main menu)
+  // default logged-out (below 1000px)
+  &:not(.pin-toc) {
+    // Center content
+    grid-template-areas:
+      'header header header header header header header header header header header header header header header header header header header header header header header header'
+      '. . . . content content content content content content content content content content content content content content content . . . . .'
+      '. . . . content content content content content content content content content content content content content content content . . . . .'
+      'footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+
+  // Case 6 (pin: main menu, hide: toc, page tools)
+  &.pin-main-menu {
+    grid-template-areas:
+      'header header header header header header header header header header header header header header header header header header header header header header header header'
+      'menu menu menu menu menu content content content content content content content content content content content content content content content . . . .'
+      'menu menu menu menu menu content content content content content content content content content content content content content content content . . . .'
+      'footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+
+  // Case 8 (pin: page tools, hide: toc, main menu)
+  // default logged-in (below 1000px)
+  &.pin-page-tools {
+    grid-template-areas:
+      'header header header header header header header header header header header header header header header header header header header header header header header header'
+      '. . content content content content content content content content content content content content content content content tools tools tools tools . . .'
+      '. . content content content content content content content content content content content content content content content tools tools tools tools . . .'
+      'footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+}
+
+
+// Responsive states
+@media (max-width: 1119px) {
+  .grid-columns {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  #grid {
+    display: grid;
+    grid-template-rows: min-content min-content 1fr min-content;
+    row-gap: 20px;
+    grid-template-areas:
+      'header header header header header header header header'
+      'content content content content content content content content'
+      'content content content content content content content content'
+      'footer footer footer footer footer footer footer footer' !important;
+    padding: 0 40px;
+
+    &.pin-page-tools {
+      grid-template-areas:
+        'header header header header header header header header'
+        'content content content content content content tools tools'
+        'content content content content content content tools tools'
+        'footer footer footer footer footer footer footer footer' !important;
+    }
+  }
+}
+
+#footer { margin: 50px 0; }

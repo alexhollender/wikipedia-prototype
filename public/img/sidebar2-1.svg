@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="131" height="952" viewBox="0 0 131 952">
+	<title>
+		sidebar2-1
+	</title>
+	<g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+		<g id="sidebar2-1" transform="translate(1 -3)">
+			<g id="languages" transform="translate(0 714)">
+				<text id="Languages" fill="#222" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="12" font-weight="400">
+					<tspan x="0" y="12">Languages</tspan>
+				</text>
+				<g id="Български-Deutsch-Ελ" fill="#0645AD" font-size="12" transform="translate(0 24)">
+					<text id="Български" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="400">
+						<tspan x="0" y="12">Български</tspan>
+					</text>
+					<text id="Deutsch" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="400">
+						<tspan x="0" y="31.04">Deutsch</tspan>
+					</text>
+					<text id="Ελληνικά" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="400">
+						<tspan x="0" y="50.08">Ελληνικά</tspan>
+					</text>
+					<text id="Español" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="400">
+						<tspan x="0" y="69.12">Español</tspan>
+					</text>
+					<text id="Esperanto" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="400">
+						<tspan x="0" y="88.16">Esperanto</tspan>
+					</text>
+					<text id="Français" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="400">
+						<tspan x="0" y="107.2">Français</tspan>
+					</text>
+					<text id="Nederlands" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="400">
+						<tspan x="0" y="126.24">Nederlands</tspan>
+					</text>
+					<text id="Português" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="400">
+						<tspan x="0" y="145.28">Português</tspan>
+					</text>
+					<text id="中文" font-family="PingFangSC-Regular, PingFang SC" font-weight="normal">
+						<tspan x="0" y="165.32">中文</tspan>
+					</text>
+				</g>
+				<polyline id="Line-15-Copy-2" stroke="#C8CCD1" stroke-linecap="square" points=".5 19.5 34 19.5 109 19.5 129.5 19.5"/>
+				<path id="Fill-1" fill="#54595D" fill-rule="nonzero" d="M127.343732,9.68249925 C127.37251,9.45849925 127.394094,9.2309993 127.394094,9 C127.394094,8.7689993 127.37251,8.54149935 127.343732,8.31749935 L128.865374,7.1589995 C129.00207,7.0539995 129.04164,6.8649995 128.951708,6.71099955 L127.512804,4.28549977 C127.422872,4.13499978 127.235814,4.07199979 127.073938,4.13499978 L125.282501,4.83849972 C124.911983,4.56199974 124.505493,4.32749977 124.066627,4.14899978 L123.796832,2.29399997 C123.764457,2.12949998 123.616969,2 123.437106,2 L120.559297,2 C120.379433,2 120.231946,2.12949998 120.203168,2.29399997 L119.933373,4.14899978 C119.494507,4.32749977 119.088017,4.55849975 118.717499,4.83849972 L116.926062,4.13499978 C116.764185,4.07549979 116.577127,4.13499978 116.487196,4.28549977 L115.048291,6.71099955 C114.95836,6.8614995 114.99793,7.0504995 115.134625,7.1589995 L116.65267,8.31749935 C116.623892,8.54149935 116.602309,8.7689993 116.602309,9 C116.602309,9.2309993 116.623892,9.45849925 116.65267,9.68249925 L115.134626,10.8409991 C114.99793,10.9459991 114.95836,11.1349991 115.048292,11.288999 L116.487196,13.7144989 C116.577128,13.8649988 116.764186,13.9279995 116.926063,13.8649988 L118.717499,13.1614989 C119.088017,13.4379988 119.494507,13.6724989 119.933373,13.8509988 L120.203168,15.7060001 C120.231946,15.8705004 120.379433,16 120.559297,16 L123.437106,16 C123.616969,16 123.764457,15.8705004 123.793235,15.7060001 L124.06303,13.8509988 C124.501896,13.6725024 124.908386,13.4414989 125.278904,13.1614989 L127.07034,13.8649988 C127.232217,13.9244988 127.419275,13.8649988 127.509206,13.7144989 L128.948111,11.288999 C129.038043,11.1384991 128.998473,10.9494991 128.861777,10.8409991 L127.343732,9.68249925 Z M121.998201,11.4499991 C120.606061,11.4499991 119.480118,10.3544992 119.480118,8.9999993 C119.480118,7.64549945 120.606061,6.54999955 121.998201,6.54999955 C123.390342,6.54999955 124.516285,7.64549945 124.516285,8.9999993 C124.516285,10.3544992 123.390342,11.4499991 121.998201,11.4499991 Z"/>
+				<g id="opt-out-button" transform="translate(.5 201.5)">
+					<rect id="Rectangle-Copy-20" width="87" height="22" x="0" y="0" fill="#F8F9FA" fill-rule="nonzero" stroke="#A2A9B1" rx="2"/>
+					<path id="Shape" fill="#72777D" fill-rule="nonzero" d="M21.0564783,17.5 L22.5,17.5 L19.1317826,6.66666665 L17.1272608,6.66666665 L13.5986521,17.5 L15.0421739,17.5 L16.0045217,14.575 L20.0135652,14.575 L21.0564783,17.5 Z M18.0097826,8.1558889 L19.6927826,13.1948333 L16.3253043,13.1948333 L18.0097826,8.15733335 L18.0097826,8.1558889 L18.0097826,8.1558889 Z M10.4713913,5.94444445 C9.92591305,5.94444445 9.42847825,5.8093889 9.189,5.3125 L8.78691305,4.5 L10.3908261,4.5 L11.1927826,5.94444445 L10.4713913,5.94444445 Z M13.5210435,13.1132222 L13.1189565,14.3301667 C12.0957692,14.0242496 11.142781,13.5278777 10.3124783,12.8683889 C8.9465652,13.9242778 7.50526085,14.5742778 5.90134785,15.0625 L5.5,13.8433889 C6.86147825,13.3558889 8.2251739,12.8683889 9.3493913,11.9742778 C8.32570855,10.8752974 7.55943595,9.57152755 7.10391305,8.1537222 L5.5798261,8.1537222 L5.5798261,6.66666665 L15.5226087,6.66666665 L15.1212609,8.1558889 L13.5173479,8.1558889 C13.235,9.3908889 12.3672609,10.9017778 11.2718696,11.9764445 C11.9163913,12.4632222 12.6363043,12.8698334 13.5203043,13.1132222 L13.5210435,13.1132222 Z M12.237913,8.1558889 L8.4676087,8.1558889 C8.7883913,9.2941111 9.5097826,10.35 10.3124783,11.1625 C11.161,10.2337222 11.7944348,9.3453889 12.2364348,8.1566111 L12.237913,8.1558889 Z"/>
+					<text id="174-more" fill="#000" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="12" font-weight="400" transform="translate(29.5 1.5)">
+						<tspan x="0" y="12">174 more</tspan>
+					</text>
+				</g>
+				<g id="Group-2" fill="#72777D" transform="translate(65 228)">
+					<path id="Fill-1" fill-rule="nonzero" d="M8.7607266,6.8891571 L9.8384571,5.77809474 C10.0538477,5.56141536 10.0538477,5.21147517 9.8384571,4.99479579 L7.98298295,3.16154291 C7.7663036,2.94615237 7.4163634,2.94615237 7.199684,3.16154291 L6.1108429,4.23927339 L8.7607266,6.8891571 Z M5.5330905,4.82813643 L0,10.3612269 L0,13 L2.63877308,13 L8.17186355,7.4669095 L5.5330905,4.82813643 Z"/>
+					<text id="Edit-links" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="12" font-weight="400" transform="translate(13)">
+						<tspan x="0" y="12">Edit links</tspan>
+					</text>
+				</g>
+			</g>
+			<g id="print/export" transform="translate(0 636)">
+				<text id="Print/export" fill="#222" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="12" font-weight="400">
+					<tspan x="0" y="12">Print/export</tspan>
+				</text>
+				<g id="Download-as-PDF-Prin" fill="#0645AD" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="12" font-weight="400" transform="translate(0 23)">
+					<text id="Download-as-PDF">
+						<tspan x="0" y="12">Download as PDF</tspan>
+					</text>
+					<text id="Printable-version">
+						<tspan x="0" y="31.04">Printable version</tspan>
+					</text>
+				</g>
+				<polyline id="Line-15-Copy" stroke="#C8CCD1" stroke-linecap="square" points=".5 18.5 34 18.5 109 18.5 129.5 18.5"/>
+			</g>
+			<g id="in-other-projects" transform="translate(0 518)">
+				<text id="In-other-projects" fill="#222" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="12" font-weight="400">
+					<tspan x="0" y="12">In other projects</tspan>
+				</text>
+				<g id="Wikimedia-Commons-Wi" fill="#0645AD" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="12" font-weight="400" transform="translate(0 23)">
+					<text id="Wikimedia-Commons">
+						<tspan x="0" y="12">Wikimedia Commons</tspan>
+					</text>
+					<text id="Wikinews">
+						<tspan x="0" y="31.04">Wikinews</tspan>
+					</text>
+					<text id="Wikiquote">
+						<tspan x="0" y="50.08">Wikiquote</tspan>
+					</text>
+					<text id="Wikivoyage">
+						<tspan x="0" y="69.12">Wikivoyage</tspan>
+					</text>
+				</g>
+				<polyline id="Line-15-Copy" stroke="#C8CCD1" stroke-linecap="square" points=".5 18.5 34 18.5 109 18.5 129.5 18.5"/>
+			</g>
+			<g id="tools" transform="translate(0 320.5)">
+				<text id="Tools" fill="#222" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="12" font-weight="400">
+					<tspan x="0" y="12">Tools</tspan>
+				</text>
+				<g id="What-links-here-Rela" fill="#0645AD" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="12" font-weight="400" transform="translate(0 23)">
+					<text id="What-links-here">
+						<tspan x="0" y="12">What links here</tspan>
+					</text>
+					<text id="Related-changes">
+						<tspan x="0" y="31.04">Related changes</tspan>
+					</text>
+					<text id="Upload-file">
+						<tspan x="0" y="50.08">Upload file</tspan>
+					</text>
+					<text id="Special-pages">
+						<tspan x="0" y="69.12">Special pages</tspan>
+					</text>
+					<text id="Permanent-link">
+						<tspan x="0" y="88.16">Permanent link</tspan>
+					</text>
+					<text id="Page-information">
+						<tspan x="0" y="107.2">Page information</tspan>
+					</text>
+					<text id="Wikidata-item">
+						<tspan x="0" y="126.24">Wikidata item</tspan>
+					</text>
+					<text id="Cite-this-page">
+						<tspan x="0" y="145.28">Cite this page</tspan>
+					</text>
+				</g>
+				<polyline id="Line-15-Copy" stroke="#C8CCD1" stroke-linecap="square" points=".5 18.5 34 18.5 109 18.5 129.5 18.5"/>
+			</g>
+			<g id="interaction" transform="translate(0 181.5)">
+				<text id="Interaction" fill="#222" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="12" font-weight="400">
+					<tspan x="0" y="12">Interaction</tspan>
+				</text>
+				<g id="Help-About-Wikipedia" fill="#0645AD" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="12" font-weight="400" transform="translate(0 25)">
+					<text id="Help">
+						<tspan x="0" y="12">Help</tspan>
+					</text>
+					<text id="About-Wikipedia">
+						<tspan x="0" y="31.04">About Wikipedia</tspan>
+					</text>
+					<text id="Community-portal">
+						<tspan x="0" y="50.08">Community portal</tspan>
+					</text>
+					<text id="Recent-changes">
+						<tspan x="0" y="69.12">Recent changes</tspan>
+					</text>
+					<text id="Contact-page">
+						<tspan x="0" y="88.16">Contact page</tspan>
+					</text>
+				</g>
+				<polyline id="Line-15" stroke="#C8CCD1" stroke-linecap="square" points=".5 19.5 34 19.5 109 19.5 129.5 19.5"/>
+			</g>
+			<g id="top" fill="#0645AD" font-size="12">
+				<g id="Main-page-Contents-F" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="400">
+					<text id="Main-page">
+						<tspan x="0" y="12">Main page</tspan>
+					</text>
+					<text id="Contents">
+						<tspan x="0" y="31.04">Contents</tspan>
+					</text>
+					<text id="Featured-content">
+						<tspan x="0" y="50.08">Featured content</tspan>
+					</text>
+					<text id="Current-events">
+						<tspan x="0" y="69.12">Current events</tspan>
+					</text>
+					<text id="Random-article">
+						<tspan x="0" y="88.16">Random article</tspan>
+					</text>
+					<text id="Donate-to-Wikipedia">
+						<tspan x="0" y="107.2">Donate to Wikipedia</tspan>
+					</text>
+					<text id="Wikipedia-store">
+						<tspan x="0" y="126.24">Wikipedia store</tspan>
+					</text>
+				</g>
+				<text id="Opt-out-of-new-skin" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="bold" transform="translate(0 146.5)">
+					<tspan x="0" y="12">Opt out of new skin</tspan>
+				</text>
+			</g>
+		</g>
+	</g>
+</svg>

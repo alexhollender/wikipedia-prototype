@@ -1,0 +1,107 @@
+html.rtl {
+  direction: rtl;
+  text-align: right;
+}
+html.rtl #site-header-left {
+  margin: 0 0 0 52px;
+}
+html.rtl #site-header-left #main-menu-handle {
+  margin: 0 0 0 14px;
+}
+html.rtl #site-header-left #globe {
+  margin: 0 0 0 10px;
+}
+html.rtl #search-top .search-icon {
+  right: 10px;
+}
+html.rtl #search-top input.search-input {
+  padding: 5px 38px 5px 10px;
+  margin: -1px -1px -1px 0;
+  border-radius: 0 2px 2px 0;
+}
+html.rtl #search-top .search-button {
+  border-radius: 0 2px 2px 0;
+}
+html.rtl #search-top:focus-within .search-icon {
+  right: 0;
+}
+html.rtl #search-top:focus-within input.search-input {
+  height: 14px;
+  transform: translate(20px, -1px);
+  padding: 5px 58px 5px 10px;
+  margin: 0 0 0 -20px;
+}
+html.rtl #search-top .search-results {
+  left: 0;
+  right: -21px;
+}
+html.rtl #search-top .search-results .result-container .thumbnail {
+  margin: 0 0 0 12px;
+}
+html.rtl .page-container.hide-toc #Introduction {
+  margin: 0 32px 0 0;
+}
+html.rtl .page-container.hide-toc #left-sidebar #toc-outer {
+  left: auto;
+  right: 42px;
+}
+html.rtl #left-sidebar #toc-button {
+  right: auto;
+  left: -72px;
+}
+html.rtl #left-sidebar #toc-outer {
+  margin: 65px 0 0 5px;
+  padding: 5px 20px 16px 5px;
+}
+html.rtl #left-sidebar #toc-outer ul li.toc-level-1 {
+  padding: 0 10px 0 0;
+}
+html.rtl #left-sidebar #toc-outer ul li.toc-level-1 span {
+  left: auto;
+  right: -8px;
+  transform: rotate(90deg);
+}
+html.rtl #left-sidebar #toc-outer ul li.toc-level-2 {
+  margin: 0 8px 0 0;
+}
+html.rtl #left-sidebar #toc-outer ul li.toc-level-3 {
+  margin: 0 10px 0 0;
+}
+html.rtl #left-sidebar #toc-outer ul li.toc-level-4 {
+  margin: 0 18px 0 0;
+}
+html.rtl .article-header .header-left {
+  margin: 0 0 0 auto;
+}
+html.rtl div.header.article-toolbar .tab-group .tab {
+  margin: 0 0 0 12px;
+}
+html.rtl div.header.article-toolbar .tab-group .tab:last-child {
+  margin-left: 0;
+}
+html.rtl div.header.article-toolbar .tab-group#read-edit-history {
+  margin: 0 auto 0 0;
+}
+html.rtl div.header.article-toolbar .tab-group#watch-tools {
+  margin: 0 12px 9px 0;
+  border-left: none;
+  border-right: 1px solid #EAECF0;
+}
+html.rtl div.header.article-toolbar .tab-group#watch-tools #watch-button {
+  padding: 0 8px 0 0;
+}
+html.rtl div.header.article-toolbar .tab-group#watch-tools #article-tools-button {
+  margin: 0 8px 0 0;
+}
+html.rtl .link-button-icon img {
+  padding: 0 0 0 8px;
+}
+html.rtl .dropdown a {
+  padding: 0 0 0 16px;
+}
+html.rtl .dropdown:after {
+  right: initial;
+  left: 0;
+}
+
+/*# sourceMappingURL=rtl.css.map */

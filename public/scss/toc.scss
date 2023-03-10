@@ -1,0 +1,66 @@
+#toc { grid-area: content; }
+#toc .panel-heading { padding-left: 20px; }
+#contents-list {
+  padding-left: 34px;
+  max-height: calc(100vh - 150px);
+}
+#contents-list a.active { color: #000; font-weight: bold; }
+#contents-list {
+  .parent {
+    position: relative;
+    span {
+      position: absolute;
+      left: -20px;
+      top: 9px;
+      cursor: pointer;
+      content: url('/img/down.svg');
+      width: 12px;
+      height: 12px;
+      margin-right: 8px;
+      opacity: 0.87;
+      transition: all 100ms;
+      transform: rotate(-90deg);
+      margin-top: -1px;
+    }
+    &:has(a.active) > a { color: #000; }
+    ul { display: none; }
+    &.show-children {
+      padding-bottom: 0;
+      span { transform: none; }
+      ul { display: block; }
+    }
+  }
+  .toc-level-2 li:first-child { padding-top: 8px; }
+  .toc-level-2,
+  .toc-level-3,
+  .toc-level-4 {
+    margin-left: 8px; border: none;
+  }
+  .level-3 { margin-left: 16px; }
+  .level-4 { margin-left: 24px; }
+  li { padding: 4px 0 4px 0; }
+}
+
+// States
+#grid {
+  &.pin-toc {
+    #toc { grid-area: toc; margin: 51px 34px 0 0; }
+    #toc .sticky { margin-left: -20px; }
+    #toc .panel-heading { padding-left: 0; margin-left: 20px; }
+    #contents-list { padding-left: 20px; }
+    @media (max-width: 1119px) {
+      #toc {
+        grid-area: content;
+        z-index: 1;
+        margin-top: unset;
+        .sticky { margin-left: auto; overflow: visible; }
+        .menu { padding-left: 14px; }
+      }
+    }
+  }
+
+  // if main menu is also pinned reduce padding on top of toc
+  &.pin-toc.pin-main-menu #toc {
+    @media (min-width: 1119px) { margin-top: 20px; }
+  }
+}

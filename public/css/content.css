@@ -1,0 +1,18 @@
+#content {
+  grid-area: content;
+  min-height: 1000px;
+}
+
+#content #page-content {
+  font-size: 14px;
+}
+
+#from-wikipedia-tagline {
+  font-size: 14px;
+}
+
+#content, #content * {
+  min-width: 0 !important;
+}
+
+/*# sourceMappingURL=content.css.map */

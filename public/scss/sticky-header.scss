@@ -1,0 +1,38 @@
+#grid {
+  &.logged-in.below-page-header #sticky-header { opacity: 1; transform: translateY(0%); }
+  &.talk #sticky-header {
+    #article-sticky { display: block; }
+    #talk-sticky { display: none; }
+    #language-menu-sticky { display: none; }
+  }
+}
+
+#sticky-header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 250ms linear;
+  background-color: #fffffff7;
+  border-bottom: 1px solid #E0E2E5;
+
+  .if-in-sticky-header { display: flex; }
+
+  .container {
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 4px 60px;
+  }
+
+  #page-title-sticky {
+    padding-left: 24px;
+    border-left: 1px solid #c8c8c8;
+    margin-left: 12px;
+  }
+  
+  #article-sticky { display: none; }
+  #language-menu nav { margin: auto; }
+}

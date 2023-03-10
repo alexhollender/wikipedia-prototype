@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+	<title>
+		Artboard Copy 4
+	</title>
+	<defs>
+		<path id="path-1" d="M9,0 C10.10457,0 11,0.89543 11,2 C11,3.104569 10.10457,4 9,4 C7.895431,4 7,3.104569 7,2 C7,0.89543 7.895431,0 9,0 Z M2,0 C3.104569,0 4,0.89543 4,2 C4,3.104569 3.104569,4 2,4 C0.895431,4 0,3.104569 0,2 C0,0.89543 0.895431,0 2,0 Z M16,0 C17.10457,0 18,0.89543 18,2 C18,3.104569 17.10457,4 16,4 C14.89543,4 14,3.104569 14,2 C14,0.89543 14.89543,0 16,0 Z"/>
+	</defs>
+	<g id="Artboard-Copy-4" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+		<g id="🔣-Icon/Interactions/ellipsis" transform="rotate(90 5.5 6.5)">
+			<mask id="mask-2" fill="#fff">
+				<use xlink:href="#path-1"/>
+			</mask>
+			<use id="Mask" fill="#000" xlink:href="#path-1"/>
+			<g id="🎨-Color/Base10-(#202122)" fill="#202122" mask="url(#mask-2)">
+				<rect id="Color-mask" width="20" height="20" transform="translate(-1 -8)"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,21 @@
+#page-header {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #a2a9b1;
+  margin-bottom: 6px;
+
+  // to make space for the TOC icon
+  #page-title { transform: translateX(34px); }
+}
+
+#language-menu { position: relative; }
+
+// when the TOC is pinned the page title
+// can move back over
+#grid.pin-toc #page-header #page-title {
+  transform: none;
+
+  // below 1119px the TOC moves back into this area
+  @media (max-width: 1119px) {
+    transform: translateX(34px);
+  }
+}

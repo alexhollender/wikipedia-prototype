@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="131" height="693" viewBox="0 0 131 693">
+	<title>
+		Artboard
+	</title>
+	<g id="Artboard" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+		<g id="sidebar2-1" transform="translate(1)">
+			<g id="print/export" transform="translate(0 636)">
+				<text id="Print/export" fill="#222" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal">
+					<tspan x="0" y="11">Print/export</tspan>
+				</text>
+				<g id="Download-as-PDF-Prin" fill="#0645AD" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" transform="translate(0 23)">
+					<text id="Download-as-PDF">
+						<tspan x="0" y="11">Download as PDF</tspan>
+					</text>
+					<text id="Printable-version" transform="translate(0 19.04)">
+						<tspan x="0" y="11">Printable version</tspan>
+					</text>
+				</g>
+				<polyline id="Line-15-Copy" stroke="#C8CCD1" stroke-linecap="square" points=".5 17.5 34 17.5 109 17.5 129.5 17.5"/>
+			</g>
+			<g id="in-other-projects" transform="translate(0 518)">
+				<text id="In-other-projects" fill="#222" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal">
+					<tspan x="0" y="11">In other projects</tspan>
+				</text>
+				<g id="Wikimedia-Commons-Wi" fill="#0645AD" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" transform="translate(0 23)">
+					<text id="Wikimedia-Commons">
+						<tspan x="0" y="11">Wikimedia Commons</tspan>
+					</text>
+					<text id="Wikinews" transform="translate(0 19.04)">
+						<tspan x="0" y="11">Wikinews</tspan>
+					</text>
+					<text id="Wikiquote" transform="translate(0 38.08)">
+						<tspan x="0" y="11">Wikiquote</tspan>
+					</text>
+					<text id="Wikivoyage" transform="translate(0 57.12)">
+						<tspan x="0" y="11">Wikivoyage</tspan>
+					</text>
+				</g>
+				<polyline id="Line-15-Copy" stroke="#C8CCD1" stroke-linecap="square" points=".5 17.5 34 17.5 109 17.5 129.5 17.5"/>
+			</g>
+			<g id="tools" transform="translate(0 320.5)">
+				<text id="Tools" fill="#222" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal">
+					<tspan x="0" y="11">Tools</tspan>
+				</text>
+				<g id="What-links-here-Rela" fill="#0645AD" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" transform="translate(0 23)">
+					<text id="What-links-here">
+						<tspan x="0" y="11">What links here</tspan>
+					</text>
+					<text id="Related-changes" transform="translate(0 19.04)">
+						<tspan x="0" y="11">Related changes</tspan>
+					</text>
+					<text id="Upload-file" transform="translate(0 38.08)">
+						<tspan x="0" y="11">Upload file</tspan>
+					</text>
+					<text id="Special-pages" transform="translate(0 57.12)">
+						<tspan x="0" y="11">Special pages</tspan>
+					</text>
+					<text id="Permanent-link" transform="translate(0 76.16)">
+						<tspan x="0" y="11">Permanent link</tspan>
+					</text>
+					<text id="Page-information" transform="translate(0 95.2)">
+						<tspan x="0" y="11">Page information</tspan>
+					</text>
+					<text id="Wikidata-item" transform="translate(0 114.24)">
+						<tspan x="0" y="11">Wikidata item</tspan>
+					</text>
+					<text id="Cite-this-page" transform="translate(0 133.28)">
+						<tspan x="0" y="11">Cite this page</tspan>
+					</text>
+				</g>
+				<polyline id="Line-15-Copy" stroke="#C8CCD1" stroke-linecap="square" points=".5 17.5 34 17.5 109 17.5 129.5 17.5"/>
+			</g>
+			<g id="interaction" transform="translate(0 181.5)">
+				<text id="Interaction" fill="#222" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal">
+					<tspan x="0" y="11">Interaction</tspan>
+				</text>
+				<g id="Help-About-Wikipedia" fill="#0645AD" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" transform="translate(0 25)">
+					<text id="Help">
+						<tspan x="0" y="11">Help</tspan>
+					</text>
+					<text id="About-Wikipedia" transform="translate(0 19.04)">
+						<tspan x="0" y="11">About Wikipedia</tspan>
+					</text>
+					<text id="Community-portal" transform="translate(0 38.08)">
+						<tspan x="0" y="11">Community portal</tspan>
+					</text>
+					<text id="Recent-changes" transform="translate(0 57.12)">
+						<tspan x="0" y="11">Recent changes</tspan>
+					</text>
+					<text id="Contact-page" transform="translate(0 76.16)">
+						<tspan x="0" y="11">Contact page</tspan>
+					</text>
+				</g>
+				<polyline id="Line-15" stroke="#C8CCD1" stroke-linecap="square" points=".5 18.5 34 18.5 109 18.5 129.5 18.5"/>
+			</g>
+			<g id="top" fill="#0645AD" fill-rule="nonzero" font-size="12">
+				<g id="Main-page-Contents-F" font-family="HelveticaNeue, Helvetica Neue" font-weight="normal">
+					<text id="Main-page">
+						<tspan x="0" y="11">Main page</tspan>
+					</text>
+					<text id="Contents">
+						<tspan x="0" y="30.04">Contents</tspan>
+					</text>
+					<text id="Featured-content">
+						<tspan x="0" y="49.08">Featured content</tspan>
+					</text>
+					<text id="Current-events">
+						<tspan x="0" y="68.12">Current events</tspan>
+					</text>
+					<text id="Random-article">
+						<tspan x="0" y="87.16">Random article</tspan>
+					</text>
+					<text id="Donate-to-Wikipedia">
+						<tspan x="0" y="106.2">Donate to Wikipedia</tspan>
+					</text>
+					<text id="Wikipedia-store">
+						<tspan x="0" y="125.24">Wikipedia store</tspan>
+					</text>
+				</g>
+				<text id="Opt-out-of-new-skin" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="bold" transform="translate(0 145.5)">
+					<tspan x="0" y="12">Opt out of new skin</tspan>
+				</text>
+			</g>
+		</g>
+	</g>
+</svg>

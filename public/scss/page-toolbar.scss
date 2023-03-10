@@ -1,0 +1,6 @@
+#page-toolbar {
+  border-bottom: 1px solid #EAECF0;
+  margin-bottom: 12px;
+  #actions { transform: translateX(-73px); }
+}
+#grid.pin-page-tools #actions { transform: none; }

@@ -1,0 +1,57 @@
+#options {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
+  background: #eee;
+  z-index: 3;
+  border-left: 1px solid #9f9f9f;
+  border-top: 1px solid #9f9f9f;
+  font-size: 14px;
+}
+#options form {
+  margin-top: 10px;
+}
+#options h6 {
+  margin: 0 0 10px 0;
+}
+#options #open-options {
+  display: none;
+}
+#options input, #options label {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#options input[type=range] {
+  width: 90px;
+}
+#options .sub-options {
+  margin-left: 20px;
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+body[data-heading-style=purple] h1#page-title {
+  color: purple;
+}
+body[data-heading-style=purple] #options .menu-borders-options {
+  opacity: 1;
+}
+body[data-heading-style=purple][data-underline=on] h1#page-title {
+  text-decoration: underline;
+}
+
+body[data-heading-style=green] h1#page-title {
+  color: green;
+}
+body[data-heading-style=green] #options .bg-color-options {
+  opacity: 1;
+}
+body[data-heading-style=green][data-heading-bg-color=yellow] h1#page-title {
+  background-color: yellow;
+}
+body[data-heading-style=green][data-heading-bg-color=pink] h1#page-title {
+  background-color: pink;
+}
+
+/*# sourceMappingURL=options.css.map */

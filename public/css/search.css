@@ -1,0 +1,113 @@
+#search {
+  max-width: 500px;
+  display: flex;
+  border: 1px solid #A2A9B1;
+  border-radius: 2px;
+  position: relative;
+}
+#search:focus-within .icon, #search:focus-within button {
+  opacity: 1;
+}
+#search:hover button {
+  opacity: 1;
+}
+#search.has-results {
+  margin-left: -24px;
+  max-width: 524px;
+}
+#search.has-results .icon {
+  left: 22px;
+}
+#search.has-results input {
+  padding-left: 60px;
+}
+
+#search .icon {
+  position: absolute;
+  padding: 1px;
+  top: 5px;
+  left: 8px;
+  opacity: 0.6;
+}
+
+#search input {
+  all: unset;
+  flex-grow: 1;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0 0 1px transparent;
+  margin: -1px 0 -1px -1px;
+  padding-left: 36px;
+  z-index: 1;
+}
+#search input:hover {
+  border: 1px solid #72777d;
+}
+#search input:focus {
+  border: 1px solid #36c;
+  box-shadow: inset 0 0 0 1px #36c;
+}
+
+#search button {
+  margin: 0;
+  border: none;
+  outline: 1px solid #a2a9b1;
+  border-radius: 0 1px 1px 0;
+  opacity: 0;
+  transition: opacity 150ms;
+}
+
+#search nav {
+  top: 31px;
+  left: -1px;
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+  width: calc(100% - 60px);
+}
+#search nav ul {
+  padding: 0;
+}
+#search nav li {
+  padding: 8px 12px;
+  line-height: 1.375;
+}
+#search nav li:hover, #search nav li.selected {
+  background-color: #eaecf0;
+  cursor: pointer;
+}
+#search nav .thumbnail {
+  width: 38px;
+  height: 38px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #c8ccd1;
+  border-radius: 2px;
+  margin: 0 7px 0 0;
+}
+#search nav .title-description {
+  max-width: calc(100% - 50px);
+}
+#search nav .title {
+  color: initial;
+}
+#search nav .title:hover {
+  text-decoration: none;
+}
+#search nav .description {
+  color: #54595d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#search nav #additional-search-options img {
+  padding: 8px 11px;
+  opacity: 0.65;
+}
+
+@media (max-width: 1000px) {
+  div.search-container .searchResults {
+    width: calc(100% + 20px);
+  }
+}
+
+/*# sourceMappingURL=search.css.map */

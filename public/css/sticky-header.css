@@ -1,0 +1,47 @@
+#grid.logged-in.below-page-header #sticky-header {
+  opacity: 1;
+  transform: translateY(0%);
+}
+#grid.talk #sticky-header #article-sticky {
+  display: block;
+}
+#grid.talk #sticky-header #talk-sticky {
+  display: none;
+}
+#grid.talk #sticky-header #language-menu-sticky {
+  display: none;
+}
+
+#sticky-header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 250ms linear;
+  background-color: rgba(255, 255, 255, 0.968627451);
+  border-bottom: 1px solid #E0E2E5;
+}
+#sticky-header .if-in-sticky-header {
+  display: flex;
+}
+#sticky-header .container {
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 4px 60px;
+}
+#sticky-header #page-title-sticky {
+  padding-left: 24px;
+  border-left: 1px solid #c8c8c8;
+  margin-left: 12px;
+}
+#sticky-header #article-sticky {
+  display: none;
+}
+#sticky-header #language-menu nav {
+  margin: auto;
+}
+
+/*# sourceMappingURL=sticky-header.css.map */

@@ -1,0 +1,23 @@
+#page-header {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #a2a9b1;
+  margin-bottom: 6px;
+}
+#page-header #page-title {
+  transform: translateX(34px);
+}
+
+#language-menu {
+  position: relative;
+}
+
+#grid.pin-toc #page-header #page-title {
+  transform: none;
+}
+@media (max-width: 1119px) {
+  #grid.pin-toc #page-header #page-title {
+    transform: translateX(34px);
+  }
+}
+
+/*# sourceMappingURL=page-header.css.map */

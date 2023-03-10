@@ -1,0 +1,99 @@
+html.rtl {
+  direction: rtl;
+  text-align: right;
+
+  // Site header & search
+  #site-header-left {
+    margin: 0 0 0 52px;
+    #main-menu-handle { margin: 0 0 0 14px; }
+    #globe { margin: 0 0 0 10px; }
+  }
+  #search-top {
+    .search-icon { right: 10px; }
+    input.search-input {
+      padding: 5px 38px 5px 10px;
+      margin: -1px -1px -1px 0;
+      border-radius: 0 2px 2px 0;
+    }
+    .search-button { border-radius: 0 2px 2px 0; }
+    &:focus-within {
+      .search-icon { right: 0; }
+      input.search-input {
+        height: 14px;
+        transform: translate(20px, -1px);
+        padding: 5px 58px 5px 10px;
+        margin: 0 0 0 -20px;
+      }
+    }
+    .search-results {
+      left: 0;
+      right: -21px;
+
+      .result-container .thumbnail { margin: 0 0 0 12px; }
+    }
+  }
+
+  .page-container.hide-toc {
+    #Introduction { margin: 0 32px 0 0; }
+    #left-sidebar #toc-outer {
+      left: auto;
+      right: 42px;
+    }
+  }
+
+  // Left sidebar, TOC
+  #left-sidebar {
+    #toc-button {
+      right: auto;
+      left: -72px;
+    }
+    #toc-outer {
+      margin: 65px 0 0 5px;
+      padding: 5px 20px 16px 5px;
+      ul li {
+        &.toc-level-1 {
+          padding: 0 10px 0 0;
+          span {
+            left: auto;
+            right: -8px;
+            transform: rotate(90deg);
+          }
+        }
+        &.toc-level-2 { margin: 0 8px 0 0; }
+        &.toc-level-3 { margin: 0 10px 0 0; }
+        &.toc-level-4 { margin: 0 18px 0 0; }
+      }
+
+
+    }
+  }
+
+  // Page header
+  .article-header .header-left { margin: 0 0 0 auto; }
+  div.header.article-toolbar .tab-group {
+    .tab {
+      margin: 0 0 0 12px;
+      &:last-child { margin-left: 0; }
+    }
+    &#read-edit-history { margin: 0 auto 0 0; }
+    &#watch-tools {
+      margin: 0 12px 9px 0;
+      border-left: none;
+      border-right: 1px solid #EAECF0;
+      #watch-button { padding: 0 8px 0 0; }
+      #article-tools-button { margin: 0 8px 0 0; }
+    }
+  }
+
+
+
+  // Components
+  .link-button-icon img { padding: 0 0 0 8px; }
+  .dropdown {
+    a { padding: 0 0 0 16px; }
+    &:after {
+      right: initial;
+      left: 0;
+    }
+  }
+}

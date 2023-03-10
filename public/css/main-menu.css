@@ -1,0 +1,32 @@
+#main-menu {
+  grid-area: header;
+  transform: translateY(9px);
+  z-index: 2;
+}
+
+#grid.pin-main-menu #main-menu {
+  grid-area: menu;
+  margin-top: initial;
+  transform: translateX(-14px);
+  background-color: #fafafa;
+  padding: 8px 14px;
+  width: calc(100% - 44px);
+}
+#grid.pin-main-menu #main-menu .menu {
+  width: auto;
+}
+@media (max-width: 1119px) {
+  #grid.pin-main-menu #main-menu {
+    grid-area: header;
+    z-index: 2;
+    background-color: initial;
+  }
+  #grid.pin-main-menu #main-menu .menu {
+    width: max-content;
+  }
+  #grid.pin-main-menu #main-menu .notice {
+    max-width: 200px;
+  }
+}
+
+/*# sourceMappingURL=main-menu.css.map */

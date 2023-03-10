@@ -1,0 +1,85 @@
+// flex containers
+.flex {
+  display: flex;
+  align-items: center;
+  &.space-between { justify-content: space-between; }
+  &.align-top { align-items: flex-start; }
+  &.column { flex-direction: column; }
+}
+
+// alignment
+.flush-left { margin-left: -6px; }
+.flush-right { margin-right: -6px; }
+
+// links
+a {
+  color: #3366cc;
+  &.spaced { margin: 0 6px; }
+}
+
+// buttons
+button {
+  all: unset;
+  height: 20px;
+  margin: 0 4px;
+  border-radius: 2px;
+  padding: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  img { width: 20px; height: 20px; }
+  &:hover { background-color: #F8F9FA; }
+  &.has-icon { display: flex; align-items: center; }
+  &.has-icon img { margin-right: 8px; }
+  &.dropdown {
+    padding-right: 24px;
+    position: relative;
+    &::after {
+      content: url('/img/down.svg');
+      position: absolute;
+      right: 6px;
+    }
+  }
+  &.progressive {
+    color: #36c;
+    &:hover { background-color: rgba(52,123,255,0.2); color: #447ff5; }
+  }
+  &.progressive.dropdown::after { content: url('/img/down-blue.svg'); }
+  &.box { background-color: #f8f9fa; border: 1px solid #a2a9b1; padding: 5px 6px; }
+  &.box:hover { background-color: #fff; color: #404244; }
+  &.small {
+    height: auto;
+    margin: 0;
+    padding: 0 2px;
+    font-weight: normal;
+    background-color: #f8f9fa;
+    border: 1px solid #c8d3de;
+  }
+  &.small:hover { background-color: #fff; color: #404244; }
+}
+
+// tabs
+.tabs {
+  transform: translateY(1px);
+  a {
+    margin-right: 12px;
+    // should be 32px to match button height
+    padding: 8px 0 6px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    &:last-child { margin-right: 4px; }
+    &:hover { text-decoration: none; border-bottom: 2px solid #36c; }
+    &.active {
+      color: #000;
+      border-bottom: 2px solid #000;
+      &:hover { border-bottom: 2px solid #000; }
+    }
+  }
+}
+
+// headings
+#page-title, #page-title-sticky {
+  // remove styles that get loaded in
+  all: unset;
+  font-size: 188%;
+  font-family: "Linux Libertine", "Georgia", "Times", serif;
+  color: #000;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+	<title>
+		Artboard
+	</title>
+	<g id="Artboard" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+		<rect id="Rectangle" width="20" height="20" x="0" y="0" fill="#929292"/>
+		<polyline id="Path" stroke="#FFF" stroke-linecap="square" stroke-width="2" points="4.286 12 10 7 15.714 12"/>
+	</g>
+</svg>
